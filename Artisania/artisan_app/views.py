@@ -16,3 +16,4 @@ def detail(request, atelier_id):
         'atelier': atelier,
         }
     return render(request, 'artisan_app/detail.html', context)
+

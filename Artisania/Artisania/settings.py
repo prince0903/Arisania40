@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'app.apps.AppConfig',
     'article_app.apps.ArticleAppConfig',
     'artisan_app.apps.ArtisanAppConfig',
-    'Commande.apps.CommandeConfig'
+    'Commande.apps.CommandeConfig',
+    'compte.apps.CompteConfig',
 ]
 
 MIDDLEWARE = [
