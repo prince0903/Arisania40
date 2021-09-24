@@ -26,7 +26,7 @@ urlpatterns = [
 path('article/',include('article_app.urls')),
 path('artisan/',include('artisan_app.urls')),
 path('commande/',include('Commande.urls')),
-path('compte/',include('Compte.urls'))
+path('compte/',include('compte.urls'))
 
 
 ]
