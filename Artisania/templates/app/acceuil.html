@@ -1,0 +1,103 @@
+
+{% extends 'main.html'%}
+{% load static%}
+{%block content%}
+  <section class=" banner contenu d-flex justify-content-center align-items-center pt-5" >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <h1 class="text-capitalize py-3 banner-desc">Artisania</h1>
+            <p class="text">Bienvenue au portail numérique des Artisans</p>
+          <p>
+  <button class="btn btn-order type1 btn-lg me-5">S'inscrire maintenant</button>
+  <a href="{%url 'artisan_app:list_atelier'%}" style="text-decoration:none;"><button class="btn btn-outline-info rounded-0 text">Visitez</button></a>
+</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+<section class="py-5">
+    <div class="container">
+    <div class="row">
+
+      <div class="card mb-3 rounded-0 border-0">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="{% static 'images/p12.jpg'%}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h5 class="card-title">La main et l'artisite</h5>
+        <p class="card-text">Celui qui travaille avec ses est un ouvrier, celui qui travaille avec ses mains et sa tête est un artisan, celui qui travaille avec ses mains, sa tête et son coeur est un artiste</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+    <div class="row">
+
+      <div class="card my-5 rounded-0 border-0">
+  <div class="row">
+
+    <div class="col-md-6">
+      <div class="card-body">
+        <h5 class="card-title">All for one</h5>
+        <p class="card-text">C'est mon histoire.C'est ma vie.It's my life bitch.I'm fabulous.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <!--Carousel!-->
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/poterie.jpg'%}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/work.jpg'%}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/hand.jpg'%}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="row">
+
+      <div class="card my-5 rounded-0 border-0">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="{% static 'images/basket.jpg'%}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h5 class="card-title">Solitude</h5>
+        <p class="card-text">C'est la vie de louga.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+
+</section>
+{%endblock%}
+

@@ -1,0 +1,32 @@
+{% extends 'main.html'%}
+{%block content%}
+<section>
+
+</section>
+<section class="banner1  justify-content-center align-items-center pt-5">
+    <div class="rows justify-content-center my-5">
+          <h1 class="text-center">Nos Ateliers</h1>
+      </div>
+
+  <div class="container d-flex bloc justify-content-center">
+
+    {%if ateliers|length_is:"0"%}
+    <div class="py-10 text-center "><p style="font-style:20px;">Aucun atelier n'est enregistré </p></div>
+    {%else%}
+    {% for atelier in ateliers %}
+    <div class="card" style="width: 400px;margin:15px 20px;">
+        <img src="{{atelier.image.url}}" class="image_bloc" style="max-width:100%;object-fit:cover;height:300px;object-fit:cover;" alt="atelier-image">
+        <div class="card-body">
+          <h5 class="card-title">{{atelier.nom}}</h5>
+          <p class="card-text">{{atelier.description}}</p>
+          <a href="{% url 'artisan_app:detail' atelier.id %}" class="btn btn-primary">Visitez</a>
+        </div>
+</div>
+
+    {%endfor%}
+     {%endif%}
+
+  </div>
+</section>
+{%endblock%}
+
